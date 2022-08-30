@@ -1,0 +1,67 @@
+<script type="text/javascript">
+// CRIADO POR: JHONY TARIK
+
+// NUMEROS ESCOLHIDOS POR VOCE, QUE NAO PODEM EXPLODIR
+e1 = 1;
+e2 = 2;
+e3 = 3;
+e4 = 4;
+e5 = 5;
+e6 = 6;
+e7 = 7;
+e8 = 8;
+e9 = 9;
+e10 = 10;
+e11 = 11;
+e12 = 12;
+e13 = 13;
+e14 = 14;
+e15 = 15;
+
+// MEUS NUMEROS
+document.write("<b style='font-family: Comic Sans MS; font-size: 20px; color: #32cd32'>Meus numeros: "+e1+", ");
+document.write(e2+", ");
+document.write(e3+", ");
+document.write(e4+", ");
+document.write(e5+", ");
+document.write(e6+", ");
+document.write(e7+", ");
+document.write(e8+", ");
+document.write(e9+", ");
+document.write(e10+", ");
+document.write(e11+", ");
+document.write(e12+", ");
+document.write(e13+", ");
+document.write(e14+", ");
+document.write(e15+"</b><br><br>");
+
+document.write("<table border='1'>");
+
+for(t=1;t<=30;t++){
+
+x = Math.ceil(Math.random() * 30);
+
+if(t==6) document.write("<tr>");
+if(t==11) document.write("<tr>");
+if(t==16) document.write("<tr>");
+if(t==21) document.write("<tr>");
+if(t==26) document.write("<tr>");
+
+
+document.write("<td><b style='font-family: Comic Sans MS; font-size: 20px; color: #C0C0C0'>"+x+"</b></td>");
+
+if(x<29) acont = "<b style='font-family: Comic Sans MS; font-size: 20px; color: dodgerblue'>nada</b>";  
+if(x>=29) acont = "<b style='font-family: Comic Sans MS; font-size: 20px; color: red'>explodiu</b>";
+
+document.write("<td><b style='font-family: Comic Sans MS; font-size: 20px; color: #C0C0C0'>Campo "+t+" "+acont+"</p></td>");
+
+if(t==10) document.write("</tr>");
+if(t==15) document.write("</tr>");
+if(t==20) document.write("</tr>");
+if(t==25) document.write("</tr>");
+if(t==30) document.write("</tr>");
+
+}
+
+document.write("</table>");
+</script>
